@@ -1,0 +1,163 @@
+
+body
+{
+    font-family: 'trebuchet ms', arial, sans-serif;
+    background: #222;
+}
+
+h1,h2,h3,h4,h5
+{
+    font-family: arial, sans-serif;
+}
+
+h1
+{
+    font-variant: small-caps;
+}
+
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a:link
+{
+    color: #000080;
+}
+a:visited
+{
+    color: #800000;
+}
+a:hover
+{
+    color: #000080;
+}
+
+
+
+#header
+{
+    background-color: #000;
+    color: #FFF;
+    height: 150px;
+    padding: 0 0 0 20px;
+}
+
+#footer
+{
+    background-color: #000;
+    color: #FFF;
+    height: 50px;
+    padding: 0 0 0 20px;
+}
+
+#maintext
+{
+    background-color: #DDD;
+    color: #000;
+    min-height: 1000px;
+    /*padding: 0 20px 0 20px;*/
+    margin: 20px;
+}
+
+
+#header h1, #header h2
+{
+    font-size: 50px;
+    padding: 22px 0 0 0;
+}
+
+#header a
+{
+   text-decoration: none;
+   color: inherit;
+}
+
+#maintext h1, #maintext h2, #maintext h3, #maintext p
+{
+    /*padding: 22px 0 0 0;*/
+    margin: 20px;
+}
+
+#publications
+{
+    background-color: #CCC;
+    margin: 10px;
+}
+
+#publications li
+{
+
+}
+
+#publications a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+
+  /*Box Shadow - (Optional)*/
+  /*-moz-box-shadow: 2px 2px 15px #ccc;*/
+  /*-webkit-box-shadow: 2px 2px 15px #ccc;*/
+  /*box-shadow: 2px 2px 15px #ccc;*/
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+li blockquote{
+    margin: 0 20px 0 0;
+}
