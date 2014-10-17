@@ -4,7 +4,21 @@
   text-align: right;
   padding: 3px;
   margin: 1px;
-  color: white;
+  color: white; 
+}
+
+.choreoschart div {
+  background-color: #b7001c;
+}
+
+.pieceschart div {
+  background-color: #b7001c;
+
+}
+
+.segmentschart div {
+  background-color: #b7001c;
+
 }
 
 
