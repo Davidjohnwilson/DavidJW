@@ -12,7 +12,9 @@
   <title>David John Wilson: Developer, Researcher, Reviewer.</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="./assets/css/cosmo-bootstrap.min.css" rel="stylesheet">
+
   <!-- Bootstrap theme -->
   <link href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
@@ -74,7 +76,7 @@
     <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="jumbotron jumbotron-mainpage">
         <div class="container">
         <h1>David John Wilson<br><small>Developer. Researcher. Reviewer.</small></h1>
         <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -115,7 +117,7 @@
       <div class="panel-heading">
         <ul class="nav nav-pills" id="homepageTabs">
           <li ng-class="{ active: panel.isSelected(1) }">
-            <a href ng-click="panel.selectTab(1)">Developer.</a>
+            <a href id="dev-button" ng-click="panel.selectTab(1)">Developer.</a>
           </li>
           <li ng-class="{ active: panel.isSelected(2) }">
             <a href ng-click="panel.selectTab(2)">Researcher.</a>
@@ -129,17 +131,17 @@
 
         <div class="panel" ng-show="panel.isSelected(1)">
           <p>Having spent three years researching for my PhD in theoretical computer science, I am currently making the transition into industry. Based in San Francisco, I am working for <a href="http://www.guidespark.com" target="_blank">GuideSpark</a> for the next year as part of the <a href="http://www.siliconvalleyinternship.com/" target="_blank">Silicon Valley Internship Programme</a>.</p>
-          <center><p><a href="./developer/index.html" target="_blank" class="btn btn-primary" id="dev-button" role="button">Learn More »</a></p></center>
+          <center><p><a href="./developer/index.html" target="_blank" class="btn btn-primary" role="button">Learn More »</a></p></center>
         </div>
 
         <div class="panel" id="research-panel" ng-show="panel.isSelected(2)">
           <p>Having completed my undergraduate degree in Mathematics at the University of Oxford, I studied for a Masters in Pure Mathematics at Rutgers, State University of New Jersey, under a Fulbright Scholarship. I have spent the last three years working towards a PhD in Computer Science (in particular, Computer Algebra and Real Algebraic Geometry) at the University of Bath, supervised by Prof. James H. Davenport and Dr Russell Bradford.</p>
-          <center><p><a href="./researcher/index.html" target="_blank" class="btn btn-primary" role="button">Learn More »</a></p></center>
+          <center><p><a href="./researcher/index.html" target="_blank" class="btn btn-primary" id="res-button" role="button">Learn More »</a></p></center>
         </div>
 
         <div class="panel" id='review-panel' ng-show="panel.isSelected(3)">
           <p>Having started learning ballet in my early twenties, I have also been reviewing performances and writing features for various websites. I am passionate about engaging new ballet audiences, and have worked recently with the Royal Opera House and other organisations to this end.</p>
-          <center><p><a href="./reviewer/index.html" target="_blank" class="btn btn-primary" role="button">Learn More »</a></p></center>
+          <center><p><a href="./reviewer/index.html" target="_blank" class="btn btn-primary" id="rev-button" role="button">Learn More »</a></p></center>
         </div>
       </div>
 
@@ -149,7 +151,7 @@
     <div class="well">
       <!--         <h2>Developer. Researcher. Reviewer.</h2> -->
       <h3>This website is currently under construction. </h3>
-      <center><p><a href="mailto:david@davidjw.co.uk?Subject=Contact%20Enquiry" target="_blank" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-envelope"></span> Contact David</a></p></center>
+      <center><p><a href="mailto:david@davidjw.co.uk?Subject=Contact%20Enquiry" target="_blank" class="btn btn-primary btn-lg" role="button">Contact David »</a></p></center>
     </div>
 
 
