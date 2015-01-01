@@ -69,22 +69,24 @@
   <div class="container">
     <div class="panel panel-primary">
       <div class="panel-heading">
-        <h2>What can we gleam from data?</h2>
+        <h2>What can we glean from data?</h2>
       </div>
       <div class="panel-body">
         <p>I am constantly fascinated about the amount of data that our technology-driven society produces. The creation of so much data offers a myriad of both problems and opportunities.</p>
         <p>One of the hardest parts of working with data is its extraction and sanitization. It is perfectly reasonable to be working on a data set that consists of billions of entries, and without smart techniques to obtain, store, and work with this data any analysis will be inefficient or impossible.</p>
         <p>Once a data set has been obtained, then analysis can begin to see what can be inferred from the data. Initially this may involve computing various metrics and statistics related to the data set. With more sophisticated techniques, however, it is possible to extend this analysis to predict behaviour of hypothetical data (in the future or outside of the data's environment). These predictions can be validated and tested against, given enough time or data, and can be useful for many applications.</p>
+        <p>The final obstacle is realising how to communicate the findings of such analysis to an end user. Care needs to be taken to ensure clarity, and also to ensure the data cannot be misunderstood.</p>
+        <p>I personally believe that working with data enables me to use all my strengths: a careful and methodical approach to data extraction; a thorough and academic analysis of the data; and clear and concise communication of the results.</p>
       </div>
     </div>
-
-    <div class="container">
       
-      <h3>Portfolio</h3>
-      <p>Below is a portfolio of data analyses I have conducted. Whilst many are on a small scale, the aim is to gradually work with larger data sets. </p>
+      <h2>Portfolio</h2>
+      <p>Below is a portfolio of data analyses and visualisations I have created. Whilst many are on a small scale, the aim is to gradually work with larger data sets. This collection is a work in progress.</p>
 
       <h3>The Royal Ballet</h3>
 
+      <p>The Royal Opera House provides a huge amount of data through its online <a href="http://rohcollections.org.uk/" target="_blank">ROH Collections</a> website. Whilst not in the most computer-readable format, it is possible to download some really interesting statistics from the site.</p>
+      <p><i>All of the data is regarding performances by The Royal Ballet in the Royal Opera House, between 1952 and 2012. The analysis is done for my own personal interest and is not endorsed by the Royal Opera House.</i></p>
 
     <div class="panel panel-primary">
       <div class="panel-heading">
@@ -93,18 +95,18 @@
       <div id="divPieceChoreo" class="panel-body chart" style="text-align:center;">
       <svg id="svgPieceChoreo"></svg>
       <br>
-      <p>Click on the graph title to switch from Top 25 Choreographers to Top 25 Ballets. Hover over a bar to see details.</p>
+      <p>Click on the graph title to switch from Choreographers to Ballets and between Top 5, 10, 20, and 50. Hover over a bar to see further details.</p>
+      <p>The code for this visualisation is available in my <b>Data Visualisation</b> Repository on <a href="https://github.com/Davidjohnwilson/data-visualisation">GitHub</a>, named <code>top-twenty.js</code>.</p>
       </div>
+
     </div>
 
-      <p>The Royal Opera House provides a huge amount of data through its online <a href="http://rohcollections.org.uk/" target="_blank">ROH Collections</a> website. Whilst not in the most computer-readable format, it is possible to download some really interesting statistics from the site.</p>
-      <p><i>All of the following data is regarding performances by The Royal Ballet in the Royal Opera House, between 1952 and 2012. The analysis is done for my own personal interest and is not endorsed by the Royal Opera House.</i></p>
 
-      <div class="chart choreoschart">
+      <!-- <div class="chart choreoschart">
         <h4>Choreographers by Total # of pieces (total 507 pieces)</h4>
         <h5>(Includes Main Stage, Linbury Theatre, and Clore Studio)</h5>
         <p>The following is a list of the top 9 choreographers for the Royal Ballet, by total number of pieces in The Royal Ballet repertoire. Unsurprisingly, Sir Kenneth MacMillan and Sir Frederick Ashton are the two leading choreographers: a fitting position for the two men who undisputedly had the greatest influence over The Royal Ballet choreographically. Both choreographers also choreographer many short works and gala pieces, leading to their complete domination over the rankings.</p>
-        <p>A little more surprising is the lead of Ashley Page and William Tuckett over more prominant choreographers such as Balanchine, although this can be explained with the inclusion of Linbury Theatre and Clore Studio performances. <!-- <b>Without Clore/Linbury what is the number?</b> --></p>
+        <p>A little more surprising is the lead of Ashley Page and William Tuckett over more prominant choreographers such as Balanchine, although this can be explained with the inclusion of Linbury Theatre and Clore Studio performances. <b>Without Clore/Linbury what is the number?</b></p>
         <p>It is also reassuring to see the three current resident choreographers (Wayne McGregor, Christopher Wheeldon, Liam Scarlett) in the list, all around the same ranking, although Wheeldon and Scarlett boosted by choreographic pieces in Draft Works and whilst at the Royal Ballet School.</p>
         <p>Finally, the exclusion of Petipa is surprising until one realises that whilst his pieces are heavily performed (the top three spots for number of performances are the Petipa-Tchaikovsky ballets), they are few in number. He only just missed the list, having 9 pieces and holding a joint position with many other choreographers.</p>
       </div>
@@ -139,9 +141,8 @@
       <div class="chart ashtonchart">
         <h5>Top 5 Ashton Pieces (Double check all Cinderellas are Ashton)</h5>
       </div></br></br>
-    </div>
+    </div> -->
 
-    </div>
 
   </div>
 
@@ -158,7 +159,8 @@
 
 
     <script src="../bower_components/d3/d3.min.js"  charset="utf-8"></script>
-    <script src="charts.js"></script>
+    <!-- <script src="charts.js"></script> -->
+    <script src="top-twenty.js"></script>    
     <script src="interactivechart.js"></script>    
 
     </body>
